@@ -1,0 +1,1 @@
+Added a config for vanilla ores
