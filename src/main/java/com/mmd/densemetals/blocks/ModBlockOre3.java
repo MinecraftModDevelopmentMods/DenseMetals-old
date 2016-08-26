@@ -1,4 +1,4 @@
-package com.knoxhack.nethermetals.blocks;
+package com.mmd.densemetals.blocks;
 
 import java.util.Random;
 
@@ -8,31 +8,31 @@ import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
 
-public class ModBlockOre extends Block {
+public class ModBlockOre3 extends Block {
 
 	private Block drop;
 	private int meta;
 	private int least_quantity;
 	private int most_quantity;
 
-	protected ModBlockOre(String unlocalizedName, Material mat, Block nethernickelOre, int meta, int least_quantity, int most_quantity) {
+	protected ModBlockOre3(String unlocalizedName, Material mat, Block nethernickelOre, int meta, int least_quantity, int most_quantity) {
 		super(mat);
 		this.drop = nethernickelOre;
 		this.meta = meta;
 		this.least_quantity = least_quantity;
 		this.most_quantity = most_quantity;
-		this.setHarvestLevel("pickaxe", 1);
-		this.setHardness(4.0f);
-		this.setResistance(15.0f);
+		this.setHarvestLevel("pickaxe", 3);
+		this.setHardness(15.0f);
+		this.setResistance(20.0f);
 		this.setUnlocalizedName(unlocalizedName);
 		this.setCreativeTab(CreativeTabs.tabBlock);
 	}
 
-	protected ModBlockOre(String unlocalizedName, Material mat, Block nethernickelOre, int least_quantity, int most_quantity) {
+	protected ModBlockOre3(String unlocalizedName, Material mat, Block nethernickelOre, int least_quantity, int most_quantity) {
 		this(unlocalizedName, mat, nethernickelOre, 0, least_quantity, most_quantity);
 	}
 
-	protected ModBlockOre(String unlocalizedName, Material mat, Block drop) {
+	protected ModBlockOre3(String unlocalizedName, Material mat, Block drop) {
 		this(unlocalizedName, mat, drop, 1, 1);
 	}
 

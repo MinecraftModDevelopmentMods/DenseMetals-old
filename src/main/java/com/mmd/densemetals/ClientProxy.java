@@ -1,10 +1,13 @@
-package com.knoxhack.nethermetals;
+package com.mmd.densemetals;
+
+import com.mmd.densemetals.client.render.blocks.BlockRenderRegister;
+
 
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-public class ServerProxy extends CommonProxy {
+public class ClientProxy extends CommonProxy {
 
 	@Override
 	public void preInit(FMLPreInitializationEvent event) {
@@ -14,6 +17,8 @@ public class ServerProxy extends CommonProxy {
 	@Override
 	public void init(FMLInitializationEvent event) {
 		super.init(event);
+
+		BlockRenderRegister.registerBlockRenderer();
 	}
 
 	@Override

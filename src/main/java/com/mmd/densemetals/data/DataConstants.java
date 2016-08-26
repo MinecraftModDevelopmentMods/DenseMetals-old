@@ -1,10 +1,10 @@
-package com.knoxhack.nethermetals.data;
+package com.mmd.densemetals.data;
 
 public class DataConstants {
 	public static final String bmOreSpawnJSON = "{"
 + "\n	\"dimensions\":["
 + "\n		{"
-+ "\n			\"dimension\":\"-1\","
++ "\n			\"dimension\":\"0\","
 + "\n			\"__comment\":\""
 + "dimension 0 for overworld, -1 for the nether, 1 for the end, other numbers "
 + "for dimensions added by other mods, and + for any dimension not already "
@@ -97,7 +97,7 @@ public class DataConstants {
 	public static final String mmOreSpawnJSON = "{"
 + "\n	\"dimensions\":["
 + "\n		{"
-+ "\n			\"dimension\":\"-1\","
++ "\n			\"dimension\":\"0\","
 + "\n			\"__comment\":\""
 + "dimension 0 for overworld, -1 for the nether, 1 for the end, other numbers "
 + "for dimensions added by other mods, and + for any dimension not already "

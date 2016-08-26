@@ -1,4 +1,4 @@
-package com.knoxhack.nethermetals.world;
+package com.mmd.densemetals.world;
 
 import java.util.Random;
 

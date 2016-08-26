@@ -1,4 +1,4 @@
-package com.knoxhack.nethermetals.blocks;
+package com.mmd.densemetals.blocks;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;

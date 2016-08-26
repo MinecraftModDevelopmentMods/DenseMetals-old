@@ -1,4 +1,4 @@
-package com.knoxhack.nethermetals;
+package com.mmd.densemetals;
 
 import java.io.IOException;
 import java.nio.charset.Charset;
@@ -9,9 +9,9 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
-import com.knoxhack.nethermetals.data.DataConstants;
+import com.mmd.densemetals.data.DataConstants;
 
-import com.knoxhack.nethermetals.ConfigHandler;
+import com.mmd.densemetals.ConfigHandler;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.common.FMLLog;
 import net.minecraftforge.fml.common.Loader;
@@ -36,9 +36,9 @@ public class Main {
 	@Instance
 	public static Main INSTANCE = null;
 
-	public static final String MODID = "nethermetals";
-	public static final String MODNAME = "Nether Metals";
-	public static final String VERSION = "1.1.2";
+	public static final String MODID = "densemetals";
+	public static final String MODNAME = "Dense Metals";
+	public static final String VERSION = "1.0";
 
 	/** All ore-spawn files discovered in the ore-spawn folder */
 	public static final List<Path> oreSpawnConfigFiles = new LinkedList<>();
@@ -107,6 +107,6 @@ public class Main {
 		Main.proxy.postInit(event);
 	}
 
-	@SidedProxy(clientSide="com.knoxhack.nethermetals.ClientProxy", serverSide="com.knoxhack.nethermetals.ServerProxy")
+	@SidedProxy(clientSide="com.mmd.densemetals.ClientProxy", serverSide="com.mmd.densemetals.ServerProxy")
 	public static CommonProxy proxy;
 }

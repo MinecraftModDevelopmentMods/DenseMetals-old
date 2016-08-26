@@ -1,11 +1,11 @@
-package com.knoxhack.nethermetals;
+package com.mmd.densemetals;
 
 import org.apache.logging.log4j.Logger;
 
-import com.knoxhack.nethermetals.blocks.ModBlocks;
-import com.knoxhack.nethermetals.crafting.ModCrafting;
+import com.mmd.densemetals.blocks.ModBlocks;
+import com.mmd.densemetals.crafting.ModCrafting;
 
-import com.knoxhack.nethermetals.world.WorldGen;
+import com.mmd.densemetals.world.WorldGen;
 
 import net.minecraftforge.fml.common.FMLLog;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
